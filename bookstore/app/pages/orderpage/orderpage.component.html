@@ -1,0 +1,16 @@
+<div class="container" style="margin:50px;">
+    <h3>Orders</h3>
+    <br>
+    <div class="card-group">
+        <div class="col">
+            <!--*ngFor="let order of orders"-->
+            <div class="card" style="width: 80%;">
+                <div class="card-body">
+                    <h4 class="card-title"> order.Title }}</h4>
+                    <h6> order.Description }}</h6>
+                    <button (click)="onClickHandler( order.Price )" class="btn btn-primary">Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
